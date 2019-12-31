@@ -8,8 +8,8 @@ from __future__ import division
 import re
 import os
 
-#with open(os.path.join('files', 'FileRename'), 'r') as file_read:
-#    print(file_read)
+with open(os.path.join('files', 'filerename'), 'r') as file_read:
+    print(file_read)
 
 for filenames in os.walk(os.path.join('files', 'filerename')):
     print(filenames)

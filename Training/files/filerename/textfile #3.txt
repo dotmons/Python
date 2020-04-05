@@ -1,3 +1,0 @@
-This is dotmons
-This is bookie
-This is Python

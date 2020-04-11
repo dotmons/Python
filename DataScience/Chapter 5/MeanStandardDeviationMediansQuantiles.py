@@ -25,7 +25,9 @@ std = df.std();
 median = df.median()
 percentile25 = df.quantile(0.25)
 percentile50 = df.quantile(0.5)
-    
+percentile75 = df.quantile(0.75)
+clean_average = df[(df>percentile25) & (df<percentile75)]
+   
 print('average: sepal length (cm) ' + str(average))
 print('standard deviation: sepal length (cm) ' + str(std))
 print('median: sepal length (cm) ' + str(median))
@@ -33,4 +35,4 @@ print('percentile25: sepal length (cm) ' + str(percentile25))
 print('percentile50: sepal length (cm) ' + str(percentile50))
 
 df_petal_length = get_iris_df()['petal length (cm)']
-print(list(df_petal_length))
+print('This returns the average value within range \n' + str(clean_average))

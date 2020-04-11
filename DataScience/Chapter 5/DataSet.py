@@ -14,3 +14,7 @@ def get_iris():
     code_species_map = dict(zip(range(3), ds['target_names']))
     df['species'] = [code_species_map[c] for c in ds['target']]
     return df
+
+
+def get_Boston():
+    return sklearn.datasets.load_boston()

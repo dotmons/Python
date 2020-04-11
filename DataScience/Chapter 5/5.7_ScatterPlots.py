@@ -19,7 +19,6 @@ colors = ["r", "g", "b"]
 markers = [".", "*", "^"]
 fig, ax = plt.subplots(1, 1)
 
-
 for i, spec in enumerate(df['species'].unique()):
     # parsing values matching spec into dff
     dff = df[df['species']==spec]

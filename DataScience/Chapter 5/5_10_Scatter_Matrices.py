@@ -12,6 +12,6 @@ from DataSet import get_iris as dfa
 
 
 df = dfa()
-from pandas.tool.plotting import scatter_matrix
+from pandas.plotting import scatter_matrix
 scatter_matrix(df)
 plt.show()

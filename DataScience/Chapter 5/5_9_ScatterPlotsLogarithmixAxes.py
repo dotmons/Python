@@ -25,3 +25,9 @@ df['MEDV'] = bs.target
 df.plot(x='CRIM', y='MEDV', kind='scatter')
 plt.title('Crime rate on normal axis')
 plt.show()
+
+df.plot(x='CRIM', y='MEDV', kind='scatter', logx=True, logy=False)
+#This is used to concentrate on the key scattered plot in a graph
+#To apply this, set logx or logy to be True
+plt.title('Crime rate on Logarithmic Axes')
+plt.show()

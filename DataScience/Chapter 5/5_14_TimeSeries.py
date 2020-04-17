@@ -29,11 +29,14 @@ URL = "https://query1.finance.yahoo.com/v8/finance/chart/GOOG?symbol=GOOG"
 with urllib.request.urlopen(URL) as ur:
     dat = ur.read()
     
-open('foo.csv', 'w').write(str(dat))
+open('foo.json', 'w').write(str(dat))
 #Make DataFrame, w timestamp as the index
-df = pd.read_csv('foo.csv')
+df = pd.read_json('foo.json')
+#print (df)
+'''
 #df.index = df['Date'].astype('datetime64')
 df['LogClose'] = np.log(df['close'])
 df['Close'].plot()
 plt.title("Normal Axis")
 plt.show()
+'''

@@ -9,6 +9,7 @@ Created on Sun Apr 12 10:19:34 2020
 import statsmodels.api as sm
 from matplotlib import pyplot as plt
 
+
 import urllib.request
 import pandas as pd
 import numpy as np

@@ -21,6 +21,7 @@ for element in arr:
 
 #Tuple: Immutable list
 tup = (1,2,3)
+tupp = tuple()
 
 
 my_dict = dict() 

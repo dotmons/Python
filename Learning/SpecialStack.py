@@ -42,14 +42,16 @@ class Stack:
         for st in reversed(self.stack):
             print(st)
 
+    def getMin(self):
+        return self.min
+
+
 
 s = Stack()
-s.push(10)
-s.push(20)
-s.push(30)
-
-print(s.pop())      # Output: 30
-print(s.peek())     # Output: 20
-print(s.sizestack())     # Output: 2
-print(s.is_empty()) # Output: False
-s.print_stack()     # Output: [20, 10]
+s.push(2)
+s.push(3)
+print(s.peek())
+print(s.pop())
+print(s.getMin())
+s.push(1)
+print(s.getMin())

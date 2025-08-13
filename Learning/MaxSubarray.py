@@ -1,4 +1,4 @@
-def sum_search(values: Sequence[int]) -> int:
+def question3(values: Sequence[int]) -> int:
     sum_counts = {}  # Dictionary to store sum -> frequency mapping
 
     for start in range(len(values)):
